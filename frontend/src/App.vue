@@ -1,11 +1,17 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+    <div class="bg-[#111827] min-h-screen">
+        <NavBar />
+        <UserSection />
+        <ServicesSection />
+        <AboutSection />
+    </div>
 </template>
 
-<style scoped></style>
+<script setup>
+    import { defineAsyncComponent } from 'vue';
+
+    const NavBar = defineAsyncComponent(() => import('@/components/NavBar.vue'));
+    const UserSection = defineAsyncComponent(() => import('@/components/UserSection.vue'));
+    const ServicesSection = defineAsyncComponent(() => import('@/components/ServicesSection.vue'));
+    const AboutSection = defineAsyncComponent(() => import('@/components/AboutSection.vue'));
+</script>

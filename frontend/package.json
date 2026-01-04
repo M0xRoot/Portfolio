@@ -12,7 +12,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tabler/icons-vue": "^3.36.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "aos": "^2.3.4",
     "pinia": "^3.0.4",
+    "tailwindcss": "^4.1.18",
     "vue": "^3.5.26"
   },
   "devDependencies": {
