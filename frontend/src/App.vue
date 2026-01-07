@@ -15,5 +15,5 @@
     const UserSection = defineAsyncComponent(() => import('@/components/UserSection.vue'));
     const ServicesSection = defineAsyncComponent(() => import('@/components/ServicesSection.vue'));
     const AboutSection = defineAsyncComponent(() => import('@/components/AboutSection.vue'));
-    const ExperienceAndSkill = defineAsyncComponent(() => import('@/components/ExperienceAndSkills.vue'));
+    const ExperienceAndSkills = defineAsyncComponent(() => import('@/components/ExperienceAndSkills.vue'));
 </script>
