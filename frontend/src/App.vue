@@ -25,6 +25,7 @@
 
 <script setup>
 import { defineAsyncComponent } from "vue";
+import ContactSection from "@/components/ContactSection.vue";
 
 const NavBar = defineAsyncComponent(() => import("@/components/NavBar.vue"));
 const UserSection = defineAsyncComponent(
@@ -41,9 +42,6 @@ const ExperienceAndSkills = defineAsyncComponent(
 );
 const ProjectSection = defineAsyncComponent(
   () => import("@/components/ProjectSection.vue"),
-);
-const ContactSection = defineAsyncComponent(
-  () => import("@/components/ContactSection.vue"),
 );
 const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
 const BackToTop = defineAsyncComponent(
