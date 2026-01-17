@@ -82,7 +82,7 @@ const skills = ref([
   { id: 4, name: "PHP", width: "97%", currentWidth: "0%" },
   { id: 5, name: "Figma", width: "20%", currentWidth: "0%" },
   { id: 6, name: "Linux OS", width: "99%", currentWidth: "0%" },
-  { id: 7, name: "Networking", width: "75%", currentWidth: "0%" },
+  { id: 7, name: "Networking", width: "85%", currentWidth: "0%" },
   { id: 8, name: "DevOps", width: "40%", currentWidth: "0%" },
 ]);
 

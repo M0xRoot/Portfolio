@@ -1,11 +1,25 @@
 <template>
   <div class="bg-[#111827] min-h-screen">
-    <NavBar />
-    <UserSection />
-    <ServicesSection />
-    <AboutSection />
-    <ExperienceAndSkills />
-    <LastSection />
+    <Suspense>
+      <template #default>
+        <div>
+          <NavBar />
+          <UserSection />
+          <ServicesSection />
+          <AboutSection />
+          <ExperienceAndSkills />
+          <ProjectSection />
+          <ContactSection />
+          <Footer />
+          <BackToTop />
+        </div>
+      </template>
+      <template #fallback>
+        <div class="flex justify-center items-center min-h-screen">
+          <LoadingSpinner />
+        </div>
+      </template>
+    </Suspense>
   </div>
 </template>
 
@@ -25,7 +39,17 @@ const AboutSection = defineAsyncComponent(
 const ExperienceAndSkills = defineAsyncComponent(
   () => import("@/components/ExperienceAndSkills.vue"),
 );
-const LastSection = defineAsyncComponent(
-  () => import("@/components/LastSection.vue"),
+const ProjectSection = defineAsyncComponent(
+  () => import("@/components/ProjectSection.vue"),
+);
+const ContactSection = defineAsyncComponent(
+  () => import("@/components/ContactSection.vue"),
+);
+const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
+const BackToTop = defineAsyncComponent(
+  () => import("@/components/BackToTop.vue"),
+);
+const LoadingSpinner = defineAsyncComponent(
+  () => import("@/components/LoadingSpinner.vue"),
 );
 </script>
